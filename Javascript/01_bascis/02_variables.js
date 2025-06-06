@@ -17,8 +17,6 @@
 
 // object
 
-
-
 let name = "Saivamshi "
 let age = 22
 let isLoggedIn = true
@@ -27,3 +25,5 @@ console.log(typeof "saivamshi")
 
 console.log(typeof undefined) // undefined
 console.log(typeof null) //object
+
+
