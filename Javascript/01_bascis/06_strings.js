@@ -26,3 +26,5 @@ const url = "https://google.com";
 console.log(url.replace('google.com','youtube.com'));
 console.log(url.includes("sundar"));     //checks whether the word is there or not
 console.log(gameName.split('-'));
+
+
