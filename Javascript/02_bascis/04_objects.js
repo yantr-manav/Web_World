@@ -46,3 +46,31 @@ console.log(Object.values(tinderUser)); // [ '123abc', 'Sam', true ]
 console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Sam' ], [ 'isLoggedIn', true ] ]
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+const course = {
+    courseName : "Master Javascript",
+    price: "999",
+    courseInstructor: "Elon Musk"
+}
+
+// course.courseInstructor   // instead of writing this long line again and again
+
+const {courseInstructor: instructor} = course // object destructuring to make it easy to call 
+
+console.log(instructor)
+
+// Example of Object Destructuring as in React
+// const navbar = ({company}) =>{
+
+// }
+// navbar(company = "tesla");
+
+
+// JSON format for API's
+{
+    "name": "Donald Trump",
+    "price": "999",
+    "courseName": "React in 2 days"
+}
+
+// Json formatter for understanding Json for clearly..
