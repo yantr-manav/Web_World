@@ -25,7 +25,7 @@ console.log( JSuser[mySym])
 
 JSuser.email = "marvel@universe.com"
 console.log(JSuser)
-// Object.freeze(JSuser) // it is used to lock the object and we can't make changes to it unless removed
+// Object.freeze(JSuser) // it is used to lock the object and we can't make changes to it unless removed ( basically makes immutable)
 JSuser.email = "wanna@tryagain.com"
 console.log(JSuser)
 
