@@ -47,7 +47,7 @@
 
 ## CallStack
 - It follows the LIFO method for execution purpose
-- So whenever funcitons or nested functions are called there goes into a callstack for its execution
+- So whenever functions or nested functions are called, they goes into a callstack for its execution
 - Consider this code:
 ```javascript 
     function one(){
