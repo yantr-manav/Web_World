@@ -43,4 +43,4 @@ console.log(Yourname())
 
 // actual usage examples..
 const myArray = [2,4,5,7,8]
-myArray.forEach(() => ())
+// myArray.forEach(() => ())
