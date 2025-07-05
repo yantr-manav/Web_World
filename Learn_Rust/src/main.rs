@@ -2,6 +2,7 @@
 fn main() {
     println!("{}",is_even(22)); // {} is used for dynamical variable
     println!("{}", fib(7));
+    println!("{}",get_string_length("World is mine"))
 }
 
 
@@ -37,4 +38,11 @@ fn fib(num: u32)-> i32 {
         _first = temp;
     }
     return _second;
+}
+
+
+//function to get_string_length by user input
+
+fn get_string_length(s: &str)-> usize {
+     s.chars().count()
 }
