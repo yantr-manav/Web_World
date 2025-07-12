@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.querySelector('.language li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li);
+
+    }
+    addLanguage("python");
+    addLanguage("java");
+    addLanguage("c++");
+    addLanguage("typescript");
+
+
+    function addOptimizeLanguage(langName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+
+
+
+    }
+            addOptimizeLanguage("go");
+
+    // EDIT
+    const secondLang = document.querySelector('.language li: n-th-child(2)');
+    console.log(secondLang);
+secondLang.innerHTML = "JavaScript";
+const newli = document.createElement('li');
+newli.textContent = "C#";
+secondLang.replaceWith(newli);
+
+//edit
+
+const firstLang = document.querySelector('.language li: first-child');
+firstLang.outerHTML = " <li> Rust </li>";
+
+//remove 
+const lastLang = document.querySelector(".language li:last-child");
+lastLang.remove();
+
+</script>
+</html>
